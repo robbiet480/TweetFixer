@@ -17,9 +17,15 @@ var twit = new twitter({
     access_token_secret: settings.twitter.access_token_secret
 });
 
+//Ok! Script loaded
+console.log(color.green(color.underline('TweetFixer 0.0.2, started')));
+
 //Check if Bitly is enabled, if so, set it up!
 if(settings.shortener == "bitly") {
+    console.log(color.green(color.underline('Using bit.ly for the shortener')));
 var bitly = new Bitly(settings.bitly.username, settings.bitly.api_key);
+} else {
+    console.log(color.green(color.underline('Using YOURLS for the shortener')));
 }
 
 
@@ -29,9 +35,6 @@ var new_json;
 var data;
 var chunk;
 var final_url = '';
-
-//Ok! Script loaded
-console.log(color.green(color.underline('TweetFixer 0.0.2, started')));
 
 //determine which URL shortener to use
 function pick_shortener(url1, cb) {
