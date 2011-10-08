@@ -1,0 +1,42 @@
+{
+    "name": "tweetfixer",
+    "description": "TweetFixer will keep an eye on your Twitter account and when it finds a URL, it will replace it with a custom short url from your bit.ly account ",
+    "maintainers": [
+        {
+            "name": "Robbie Trencheny",
+            "email": "me@robbiet.us",
+            "web": "http://robbie.io"
+        }
+    ],
+    "contributors": [
+        {
+            "name": "Robbie Trencheny",
+            "email": "me@robbiet.us",
+            "web": "http://robbie.io"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "GPLv3",
+            "url": "http://www.gnu.org/licenses/gpl-3.0.html"
+        }
+    ],
+    "bugs": [
+        {
+            "web": "https://github.com/robbiet480/tweetfixer/issues"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git@github.com:robbiet480/TweetFixer.git"
+        }
+    ],
+    "keywords": "twitter linkshortener bitly replace",
+    "version": "0.0.2",
+    "dependencies": {
+        "ntwitter": "0.2.7",
+        "node-bitly": "1.0.1",
+        "colors": "0.5.1"
+    }
+}
