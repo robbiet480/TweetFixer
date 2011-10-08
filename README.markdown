@@ -37,17 +37,24 @@ I got tired of not having better analytics on the links I was sending out on Twi
         }
     }
 ```
+
 * Change the values to suit your needs. For shortener, the valid values are yourls or bitly
 * Save `config.json` in the root directory
 * Run `node app.js`
 
 ## Notes
 You need to setup a new application on your Twitter account. To do this: 
+
 * Go to [dev.twitter.com](http://dev.twitter.com)
+
 * Sign in and [create a new app](https://dev.twitter.com/apps/new). 
+
 * Name it whatever you want (preferably something without apostrophes etc). 
+
 * Make sure you change the permissions model to read AND write. 
+
 * Then go back to the main app page and at the bottom click generate access details to get the access\_token\_key and access\_token\_secret. 
+
 * All the keys and secrets go into the config.json file
 
 ## Acknowledgements
